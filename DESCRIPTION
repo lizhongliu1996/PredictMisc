@@ -1,0 +1,19 @@
+Package: PredictMisc
+Type: Package
+Title: package that use three methods to predict methylation regions
+Version: 0.1.0
+Author: person("Lizhong", "Liu", email = "lxl816@miami.edu", role = c("aut","cre"))
+Maintainer: Lizhong Liu <lxl816@miami.edu>
+Description: Typically, when using doing methylation predictions, there are 450k number
+        of CpGs, how to select predictors is a tricky problem. Usually, people choose
+        CpGs that are most significant or CpGs with most varilibity, here we present
+        a new method using differential methylation regions to select CpGs as prodictors.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4)
+Imports: tibble, glmnet, caret, pROC, stats, utils, Aclust, pathwayPCA, dplyr, 
+         data.table,e1071, coMethDMR, foreach, parallel, doParallel, randomForest, kernlab
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
